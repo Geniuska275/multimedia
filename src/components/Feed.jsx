@@ -13,7 +13,7 @@ import Related from "./Related";
 import BackToTop from "./BackToTop";
 import Loading from "./loading";
 export default function Feed({mode,setMode}) {
-  const[selectedCategory,setSelectedCategory]=useState("New")
+  const[selectedCategory,setSelectedCategory]=useState("channel")
   const [videos,setVideos]=useState([])
   const [related,setRelated]=useState([])
   const [loading,setisLoading]=useState(true)

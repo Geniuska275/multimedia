@@ -7,6 +7,8 @@ import {
   SearchFeed,
   ChannelDetails,
   VideoDetails,
+  BackToTop,
+  Footer,
 } from "./components";
 
 function App() {
@@ -81,8 +83,13 @@ function App() {
             />
             <Route path="/video/:id" element={<VideoDetails />} />
             <Route path="/Channel/:id" element={<ChannelDetails />} />
-            <Route path="/search/:searchTerm" element={<SearchFeed />} />
+            <Route
+              path="/search/:searchTerm"
+              element={<SearchFeed mode={mode} />}
+            />
           </Routes>
+          <BackToTop mode={mode} />
+          <Footer mode={mode} />
         </Box>
       </BrowserRouter>
     )

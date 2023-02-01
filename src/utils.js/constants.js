@@ -13,20 +13,20 @@ import DeveloperModeIcon from "@mui/icons-material/DeveloperMode";
 import TheaterComedyIcon from "@mui/icons-material/TheaterComedy";
 
 export const categories = [
-  { name: "New", icon: <HomeIcon /> },
+  // { name: "New", icon: <HomeIcon /> },
   { name: "channel", icon: <CodeIcon /> },
   { name: "trending", icon: <CodeIcon /> },
   { name: "related", icon: <CodeIcon /> },
   { name: "Music", icon: <MusicNoteIcon /> },
   { name: "Education", icon: <SchoolIcon /> },
   { name: "Podcast", icon: <GraphicEqIcon /> },
-  { name: "search-movies", icon: <OndemandVideoIcon /> },
-  { name: "Gaming", icon: <SportsEsportsIcon /> },
-  { name: "Live", icon: <LiveTvIcon /> },
-  { name: "Sport", icon: <FitnessCenterIcon /> },
-  { name: "Fashion", icon: <CheckroomIcon /> },
-  { name: "Beauty", icon: <FaceRetouchingNaturalIcon /> },
-  { name: "Comedy", icon: <TheaterComedyIcon /> },
+  { name: "multi", icon: <OndemandVideoIcon /> },
+  // { name: "Gaming", icon: <SportsEsportsIcon /> },
+  // { name: "Live", icon: <LiveTvIcon /> },
+  // { name: "Sport", icon: <FitnessCenterIcon /> },
+  // { name: "Fashion", icon: <CheckroomIcon /> },
+  // { name: "Beauty", icon: <FaceRetouchingNaturalIcon /> },
+  // { name: "Comedy", icon: <TheaterComedyIcon /> },
   // { name: "Gym", icon: <FitnessCenterIcon /> },
   // { name: "Crypto", icon: <DeveloperModeIcon /> },
 ];

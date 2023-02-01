@@ -1,3 +1,4 @@
+
 import React from "react";
 import {useState,useEffect} from "react";
 import { fetchAPI } from "../utils.js/fetchAPI";
@@ -7,9 +8,10 @@ import {Typography,Box,Stack} from "@mui/material";
 import Related from "./Related";
 import Videos from "./Videos"
 import { fetchFromAPI } from "../utils.js/fetchFROMApi";
-
+import {CheckCircle} from "@mui/icons-material";
 
 import VideoCard from "./videoCard";
+import axios from "axios";
 
 export default function VideoDetails() {
   const [related,setRelated]=useState([])
@@ -21,6 +23,14 @@ export default function VideoDetails() {
     fetchFromAPI('related').then((data)=>{
       console.log(data.data)
       setRelated(data.data)})
+   },[])
+   useEffect(()=>{
+      axios.get(`https://www.youtube.com/watch?v=${id}`,{
+        method:"GET",
+        headers:{"content-type":"application/json"}
+      }).then((data)=>{
+        console.log(data)
+      })
    },[])
 
   return (
